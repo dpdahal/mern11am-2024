@@ -7,3 +7,6 @@
 * Basic Course
 * Variable
 * Data types
+
+
+##### rename .env-example file to .env and enter your pin
