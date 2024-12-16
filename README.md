@@ -4,4 +4,6 @@
 
 ### Day 2
 
-1. Basic Course
+* Basic Course
+* Variable
+* Data types
