@@ -10,3 +10,7 @@
 
 
 ##### rename .env-example file to .env and enter your pin
+
+
+## DOM, JSON,OOP,Module,Storage
+## XMLHttpRequest
