@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <blockquote>
+        <h1 id="user_info"></h1>
+    </blockquote>
+    <blockquote>
+        <h1>JavaScript</h1>
+        <p>
+            JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+        </p>
+    </blockquote>
+    <blockquote>
+        <h1>Php</h1>
+        <p>
+            PHP is a popular general-purpose scripting language that is especially suited to web development.
+        </p>
+    </blockquote>
+    <blockquote>
+        <h1>Java</h1>
+        <p>
+            Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
+        </p>
+    </blockquote>
+
+    <blockquote>
+
+    <button onclick="logout()">Logout</button>
+    </blockquote>
+
+    <script>
+        let username = localStorage.getItem('username');
+        document.getElementById('user_info').innerText = `Welcome ${username}`;
+        if(username === null){
+            window.location.href = 'index.html';
+        }
+
+        function logout(){
+            localStorage.clear();
+            window.location.href = 'index.html';
+        }
+
+    </script>
+</body>
+</html>
