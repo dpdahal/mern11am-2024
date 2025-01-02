@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <blockquote>
+        <h1>Update Record</h1>
+        <form action="" onsubmit="updateStudentData(event)">
+            <input type="hidden" id="id">
+            name: <input type="text" id="name" required> <br>
+            email: <input type="email" id="email" required> <br>
+            address: <input type="text" id="address" required> <br>
+            <button>Update Record</button>
+        </form> 
+    </blockquote>
+    <script>
+        let data = localStorage.getItem('student');
+        data =data ? JSON.parse(data) : [];
+        document.getElementById('name').value = data.name;
+        document.getElementById('email').value = data.email;
+        document.getElementById('address').value = data.address;
+        document.getElementById('id').value = data.id;
+
+        function $(id){
+            return document.getElementById(id);
+        }
+
+
+        function updateStudentData(event){
+            event.preventDefault();
+            let name = $('name').value;
+            let email = $('email').value;
+            let address = $('address').value;
+            let id = $('id').value;
+            let url = `http://localhost:5000/students/${id}`;
+            let data = {name, email, address};
+            fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }).then((res) => {
+                return res.json();
+            }).then((data) => {
+                console.log(data);
+                localStorage.clear();
+                window.location.href = 'index.html';
+            }).catch((e) => {
+                console.log(e);
+            })
+
+        }
+    </script>
+</body>
+</html>

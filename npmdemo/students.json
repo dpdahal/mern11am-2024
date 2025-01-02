@@ -1,0 +1,29 @@
+{
+  "students": [
+    {
+      "id": "2",
+      "name": "shyam",
+      "address": "pkr"
+    },
+    {
+      "id": "3",
+      "name": "hari",
+      "address": "bkt"
+    },
+    {
+      "id": "4",
+      "name": "sita",
+      "address": "lalitpur"
+    },
+    {
+      "id": "5",
+      "name": "gita",
+      "address": "bhaktapur"
+    },
+    {
+      "id": 5,
+      "name": "sophia",
+      "address": "dharan"
+    }
+  ]
+}
