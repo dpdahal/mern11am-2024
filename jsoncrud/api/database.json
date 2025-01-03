@@ -1,43 +1,16 @@
 {
   "students": [
     {
-      "id": "1",
-      "name": "Perry Barlow",
-      "email": "tyjyf@mailinator.com",
-      "address": "Aut voluptas et repr"
+      "id": 1,
+      "name": "Hayden Martinez",
+      "email": "tyfawyz@mailinator.com",
+      "address": "Eiusmod vitae pariat"
     },
     {
-      "id": "2",
-      "name": "Hari",
-      "email": "hari@gmail.com",
-      "address": "Pokhara"
-    },
-    {
-      "id": "3",
-      "name": "Wing Wells",
-      "email": "fypefun@mailinator.com",
-      "address": "Non velit eiusmod ex"
-    },
-    {
-      "name": "ram",
-      "email": "ram@gmail.com",
-      "address": "ktm",
-      "id": "4"
+      "id": 2,
+      "name": "Julie Fischer",
+      "email": "qiza@mailinator.com",
+      "address": "Eos quam dolor conse"
     }
-  ],
-
-  "teachers": [
-    {
-      "id": "1",
-      "name": "Perry Barlow",
-      "email": "tyjyf@mailinator.com",
-      "address": "Aut voluptas et repr"
-    },
-    {
-      "id": "2",
-      "name": "Hari",
-      "email": "hari@gmail.com",
-      "address": "Pokhara"
-    }
-    ]
+  ]
 }
